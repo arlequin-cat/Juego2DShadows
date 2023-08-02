@@ -12,6 +12,7 @@ public class Curar : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             vida.Curar(cantidadCurar);
+            AudioManager.Instance.PlaySFX("curar");
             Destroy(gameObject);
         }
     }
