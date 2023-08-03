@@ -25,6 +25,7 @@ public class CombateCaC : MonoBehaviour
         {
             Golpe();
             tiempoSiguienteAtaque = tiempoEntreAtaques;
+            AudioManager.Instance.PlaySFX("Attack");
         }
     }
 

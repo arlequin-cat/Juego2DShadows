@@ -7,12 +7,13 @@ public class Curar : MonoBehaviour
     public float cantidadCurar;
     public Vida vida;
 
-    private void OnTriggerEnter2D(Collider2D other){
+    private void OnTriggerEnter2D(Collider2D other)
+    {
 
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             vida.Curar(cantidadCurar);
-            AudioManager.Instance.PlaySFX("curar");
+            AudioManager.Instance.PlaySFX("Curar");
             Destroy(gameObject);
         }
     }
