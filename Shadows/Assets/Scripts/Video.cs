@@ -16,21 +16,18 @@ public class Video : MonoBehaviour
         StartCoroutine(PlayVideo());
     }
 
-    IEnumerator PlayVideo(){
+    IEnumerator PlayVideo()
+    {
+        Debug.Log("Reproduciendo Video");
         videoPlayer.Prepare();
         WaitForSeconds waitForSeconds = new WaitForSeconds(1);
-        while (!videoPlayer.isPrepared){
+        while (!videoPlayer.isPrepared)
+        {
             yield return waitForSeconds;
             break;
         }
         rawImage.texture = videoPlayer.texture;
         videoPlayer.Play();
         audioSource.Play();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

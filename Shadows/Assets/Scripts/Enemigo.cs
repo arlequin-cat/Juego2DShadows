@@ -25,6 +25,11 @@ public class Enemigo : MonoBehaviour
     private void Muerte()
     {
         animator.SetTrigger("Muerte");
-        //Destroy(gameObject);
+        Invoke("DestruirObjeto", 0.8f);
     }
+    private void DestruirObjeto()
+    {
+        Destroy(gameObject);
+    }
+
 }

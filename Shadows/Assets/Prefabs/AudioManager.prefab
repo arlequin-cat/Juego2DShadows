@@ -64,8 +64,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 071b61a21a9b6524287689bad4b3801b, type: 3}
   - name: Clic
     clip: {fileID: 8300000, guid: 28cdf5cad861a2c4daea9588d1e2cb99, type: 3}
-  - name: 
-    clip: {fileID: 0}
+  - name: habilidad
+    clip: {fileID: 8300000, guid: 20b28a8caa8eb734ba978638597691ea, type: 3}
   - name: 
     clip: {fileID: 0}
   musicSource: {fileID: 5277874955368744691}
